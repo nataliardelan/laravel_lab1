@@ -39,7 +39,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $user_data = $request->all();
-        $user_data['password'] = Hash::make('Badoonz_Laravel');
+        $user_data['password'] = Hash::make($request);
         User::create($user_data);
 
         return redirect()->route('users.index');

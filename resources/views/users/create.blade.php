@@ -14,6 +14,10 @@
 
         <strong>Email:</strong>
         <input type="text" name="email" placeholder="Email" />
+        <br />
+
+        <strong>Password:</strong>
+        <input type="password" name="password" placeholder="Password" />
         <br /><br />
 
         <button type="submit">Submit</button>
